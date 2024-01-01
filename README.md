@@ -15,7 +15,7 @@ This is a Chrome extension that helps populate prompts in a new ChatGPT chat.
 2. Open Chrome and navigate to `chrome://extensions`
 3. Enable Developer mode by ticking the checkbox in the upper-right corner
 4. Click on the "Load unpacked" button
-5. Select the directory containing the cloned repository
+5. Select the `chatflow-chrome` directory from the cloned repository
 
 ## Usage
 
