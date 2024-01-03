@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>ChatFlow Extension Options</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fafafa;
+      }
+
+      h1 {
+        color: #212121;
+        margin-left: 20px;
+      }
+
+      select,
+      button {
+        margin: 20px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      p {
+        margin-left: 20px;
+        color: #757575;
+      }
+
+      form {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ChatFlow: ChatGPT Prompt Populator Plugin Settings</h1>
+    <h2>Choose Default Model</h2>
+    <select id="modelSelect">
+      <option value="text-davinci-002-render-sha">GPT-3.5</option>
+      <option value="gpt-4">GPT-4</option>
+    </select>
+    <button id="saveBtn">Save</button>
+    <p id="currentModel"></p>
+    <h2>Update Preprompts</h2>
+    <form id="prepromptsForm">
+        <div id="prepromptsContainer">
+            <!-- Preprompts will be loaded here -->
+        </div>
+        <button id="addPrompt">Add Prompt</button>
+        <button id="removePrompt">Remove Last Prompt</button>
+        <input type="submit" value="Save Changes">
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
