@@ -1,27 +1,10 @@
-function openMenuAndSelectModel(model) {
-    // Open the menu
-    const menuButton = document.getElementById('radix-:r5b:'); // Adjust the selector as needed
-    if (menuButton) {
-        menuButton.click();
-
-        // Wait for the menu to open, then select the model
-        setTimeout(() => {
-            // Adjust this selector to correctly target the desired model menu item
-            const modelMenuItem = document.querySelector('div[role="menuitem"][data-radix-collection-item=""]');
-            if (modelMenuItem && modelMenuItem.textContent.includes(model)) {
-                modelMenuItem.click();
-            } else {
-                console.error('Model menu item not found');
-            }
-        }, 500); // Adjust timeout as necessary
-    } else {
-        console.error('Menu button not found');
-    }
-}
-
 function populatePrompt(prompt) {
     const textarea = document.getElementById('prompt-textarea');
+    if(textarea){
+        console.log('Textarea found');
+    }
     if (textarea) {
+        console.log('Populating prompt with ' + prompt);
         textarea.value = prompt;
         textarea.dispatchEvent(new Event('input', { bubbles: true }));
 
@@ -35,24 +18,20 @@ function populatePrompt(prompt) {
     }
 }
 
-function processModel(model) {
-    openMenuAndSelectModel(model);
-    // Additional logic for processing the model can be added here if necessary
-}
-
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         if (request.model) {
-            processModel(request.model);
-
+            console.log('Received model', request.model);
             // Add a delay to ensure the model is set before processing the prompt
             setTimeout(() => {
                 const urlParams = new URLSearchParams(window.location.search);
                 const prompt = urlParams.get('prompt');
                 if (prompt) {
+                    console.log('Prompt found', prompt);
                     populatePrompt(prompt);
+                    console.log('Prompt populated');
                 }
-            }, 1000); // Adjust this delay based on how long the model selection takes
+            }, 1000); // Adjusted the delay to 1000 ms
         }
     }
 );
