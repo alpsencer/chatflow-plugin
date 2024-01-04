@@ -1,22 +1,40 @@
 {
-    "manifest_version": 2,
-    "name": "OpenAI Chat Prompt Populator",
+    "manifest_version": 3,
+    "name": "ChatFlow: ChatGPT Prompt Populator",
     "version": "1.0",
-    "permissions": [
-        "activeTab",
-        "tabs",
-        "contextMenus",
-        "storage"
-    ],
-    "options_page": "settings.html",
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
     },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "permissions": [
+        "storage",
+        "contextMenus",
+        "tabs"
+    ],
     "content_scripts": [
         {
-            "matches": ["https://chat.openai.com/*"],
-            "js": ["content.js"]
+            "matches": [
+                "https://chat.openai.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
         }
-    ]
+    ],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }
 }

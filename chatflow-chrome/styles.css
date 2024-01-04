@@ -1,0 +1,15 @@
+.my-label-class {
+    font-size: 14px;
+    color: #000000;
+}
+
+.my-input-class {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.prompt-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
