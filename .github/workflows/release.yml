@@ -15,16 +15,13 @@ jobs:
       - name: Install zip
         run: sudo apt-get install zip
 
-      - name: Prepare Release Version
-        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
-
       - name: Zip extension
-        run: zip -r chatflow-chrome-${{ env.VERSION }}.zip chatflow-chrome/
-    
+        run: zip -r chatflow-chrome.zip chatflow-chrome/
+
       - name: Create Release
         uses: softprops/action-gh-release@v0.1.15
         with:
-          files: chatflow-chrome-$VERSION.zip
+          files: chatflow-chrome.zip
           tag_name: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
