@@ -16,6 +16,9 @@ const defaultPreprompts = {
 // Get preprompts from local storage or use default
 chrome.storage.local.get(['preprompts'], (result) => {
     const preprompts = result.preprompts || defaultPreprompts;
+    
+    // Remove all existing context menu items
+    chrome.contextMenus.removeAll(function() {});
 
     // Create context menu items for each preprompt
     for (const [key, value] of Object.entries(preprompts)) {
@@ -31,19 +34,27 @@ chrome.storage.local.get(['preprompts'], (result) => {
     }
 });
 
-// Listen for preprompts update
 chrome.storage.onChanged.addListener(function(changes, namespace) {
     if (changes.preprompts) {
-        // Remove old context menu items
+        // Remove all existing context menu items
         chrome.contextMenus.removeAll(function() {
-            // Create new context menu items
-            for (const [key, value] of Object.entries(changes.preprompts.newValue)) {
-                chrome.contextMenus.create({
-                    id: key,
-                    title: value,
-                    contexts: ['editable'],
-                });
-            }
+            // Get updated preprompts from local storage
+            chrome.storage.local.get(['preprompts'], (result) => {
+                const preprompts = result.preprompts || defaultPreprompts;
+                
+                // Create context menu items for each preprompt
+                for (const [key, value] of Object.entries(preprompts)) {
+                    if (typeof value === 'string') { // Ensure value is a string
+                        chrome.contextMenus.create({
+                            id: key,
+                            title: value,
+                            contexts: ["selection"]
+                        });
+                    } else {
+                        console.error(`Invalid value for key ${key}: expected string, found ${typeof value}`);
+                    }
+                }
+            });
         });
     }
 });
