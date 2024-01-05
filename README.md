@@ -1,7 +1,7 @@
-![GitHub issues](https://img.shields.io/github/issues/alpsencer/chatflow-chrome)
-![GitHub forks](https://img.shields.io/github/forks/alpsencer/chatflow-chrome)
-![GitHub stars](https://img.shields.io/github/stars/alpsencer/chatflow-chrome)
-![GitHub license](https://img.shields.io/github/license/alpsencer/chatflow-chrome)
+![GitHub issues](https://img.shields.io/github/issues/alpsencer/chatflow-plugin)
+![GitHub forks](https://img.shields.io/github/forks/alpsencer/chatflow-plugin)
+![GitHub stars](https://img.shields.io/github/stars/alpsencer/chatflow-plugin)
+![GitHub license](https://img.shields.io/github/license/alpsencer/chatflow-plugin)
 
 # ChatFlow: ChatGPT Prompt Populator Browser Extension
 
