@@ -6,15 +6,23 @@
 # ChatFlow: ChatGPT Prompt Populator Chrome Plugin
 
 This is a **free** and **open-source** Chrome extension that helps populate prompts in a new ChatGPT chat.
+<h2 align="center" width="100%">⚡ Use ChatGPT Faster</h2>
+<p align="center" width="100%">
+<img src="assets/simple-demo.gif" alt="Demo of ChatGPT interface" width="80%">
+<p align="center" class="figure-caption">Figure 1: A quick demonstration of using ChatGPT for efficient communication.</p>
+</p>
 
-⚡ Ask ChatGPT Faster
-![Demo](assets/simple-demo.gif)
+<h2 align="center" width="100%">🌊 Ask from anywhere, any file (using FlowLauncher)</h2>
+<p align="center" width="100%">
+<img src="assets/flow-launcher-demo.gif" alt="Flow Launcher Demo" width="80%">
+<p align="center" class="figure-caption">Figure 2: Demonstrating the use of FlowLauncher with ChatGPT.</p>
+</p>
 
-🌊 Ask from anywhere, any file (using FlowLauncher)
-![Flow Launcher Demo](assets/flow-launcher-demo.gif)
-
-⚙️ Customize With Your Prompts
-![Options](assets/options-demo.gif)
+<h2 align="center" width="100%">⚙️ Customize With Your Prompts</h2>
+<p align="center" width="100%">
+<img src="assets/options-demo.gif" alt="Options Demo" width="80%">
+<p align="center" class="figure-caption">Figure 3: Customizing ChatGPT with user-defined prompts.</p>
+</p>
 
 ## Features
 
