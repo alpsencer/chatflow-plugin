@@ -3,9 +3,9 @@
 ![GitHub stars](https://img.shields.io/github/stars/alpsencer/chatflow-chrome)
 ![GitHub license](https://img.shields.io/github/license/alpsencer/chatflow-chrome)
 
-# ChatFlow: ChatGPT Prompt Populator Chrome Plugin
+# ChatFlow: ChatGPT Prompt Populator Browser Extension
 
-This is a **free** and **open-source** Chrome extension that helps populate prompts in a new ChatGPT chat.
+This is a **free** and **open-source** browser* extension that helps populate prompts in a new ChatGPT chat. (* currently chromium only)
 <h2 align="center" width="100%">⚡ Use ChatGPT Faster</h2>
 <p align="center" width="100%">
 <img src="assets/simple-demo.gif" alt="Demo of ChatGPT interface" width="80%">
