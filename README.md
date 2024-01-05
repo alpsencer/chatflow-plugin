@@ -5,9 +5,16 @@
 
 # ChatGPT Prompt Populator
 
-This is a Chrome extension that helps populate prompts in a new ChatGPT chat.
+This is a **free** and **open-source** Chrome extension that helps populate prompts in a new ChatGPT chat.
 
+⚡ Ask ChatGPT Faster
+![Demo](assets/simple-demo.gif)
+
+🌊 Ask from anywhere, any file (using FlowLauncher)
 ![Flow Launcher Demo](assets/flow-launcher-demo.gif)
+
+⚙️ Customize With Your Prompts
+![Options](assets/options-demo.gif)
 
 ## Features
 
@@ -23,6 +30,8 @@ This is a Chrome extension that helps populate prompts in a new ChatGPT chat.
 3. Enable Developer mode by ticking the checkbox in the upper-right corner
 4. Click on the "Load unpacked" button
 5. Select the `chatflow-chrome` directory from the cloned repository
+
+Note: You need to install the FlowLauncher to ask ChatGPT from any file in your computer
 
 ## Usage
 
@@ -41,7 +50,7 @@ This is a Chrome extension that helps populate prompts in a new ChatGPT chat.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Fork and add your features easily. This is a simple beginner-friendly Chrome plugin. Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
