@@ -7,7 +7,9 @@
 
 This is a **free** and **open-source** browser extension that helps populate prompts in a new ChatGPT chat.
 <p align="center" width="100%">
-<img href="https://chromewebstore.google.com/detail/chatflow-chatgpt-prompt-p/ajiaddafijdbdfdgmnidgbmobmfhejkh" src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/HRs9MPufa1J1h5glNhut.png" alt="Get from Chrome Webstore" width="20%">
+<a href="https://chromewebstore.google.com/detail/chatflow-chatgpt-prompt-p/ajiaddafijdbdfdgmnidgbmobmfhejkh">
+    <img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/HRs9MPufa1J1h5glNhut.png" alt="Get from Chrome Webstore" width="20%">
+</a>
 </p>
 <h2 align="center" width="100%">⚡ Use ChatGPT Faster</h2>
 <p align="center" width="100%">
