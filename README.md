@@ -5,7 +5,7 @@
 
 # ChatFlow: ChatGPT Prompt Populator Browser Extension
 
-This is a **free** and **open-source** browser extension that helps populate prompts in a new ChatGPT chat.
+This is a **free** and **open-source** browser extension that helps populate prompts in a new ChatGPT chat. This project is a part of the `open-jarvis` AI-powered personal digital clone/assistant project, which will be open-source soon.
 <p align="center" width="100%">
 <a href="https://chromewebstore.google.com/detail/chatflow-chatgpt-prompt-p/ajiaddafijdbdfdgmnidgbmobmfhejkh">
     <img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/HRs9MPufa1J1h5glNhut.png" alt="Get from Chrome Webstore" width="20%">
