@@ -19,8 +19,8 @@ jobs:
         run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
 
       - name: Zip extension
-        run: zip -r chatflow-chrome-$VERSION.zip chatflow-chrome/
-
+        run: zip -r chatflow-chrome-${{ env.VERSION }}.zip chatflow-chrome/
+    
       - name: Create Release
         uses: softprops/action-gh-release@v0.1.15
         with:
