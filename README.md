@@ -1,6 +1,13 @@
+![GitHub issues](https://img.shields.io/github/issues/alpsencer/chatflow-chrome)
+![GitHub forks](https://img.shields.io/github/forks/alpsencer/chatflow-chrome)
+![GitHub stars](https://img.shields.io/github/stars/alpsencer/chatflow-chrome)
+![GitHub license](https://img.shields.io/github/license/alpsencer/chatflow-chrome)
+
 # ChatGPT Prompt Populator
 
 This is a Chrome extension that helps populate prompts in a new ChatGPT chat.
+
+![Flow Launcher Demo](assets/flow-launcher-demo.gif)
 
 ## Features
 
