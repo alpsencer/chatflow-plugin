@@ -16,17 +16,15 @@ jobs:
         run: sudo apt-get install zip
 
       - name: Prepare Release Version
-        id: prep_version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/v}
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
 
       - name: Zip extension
-        run: zip -r chatflow-chrome-${{ steps.prep_version.outputs.version }}.zip chatflow-chrome/
+        run: zip -r chatflow-chrome-$VERSION.zip chatflow-chrome/
 
       - name: Create Release
         uses: softprops/action-gh-release@v0.1.15
         with:
-          files: chatflow-chrome-${{ steps.prep_version.outputs.version }}.zip
+          files: chatflow-chrome-$VERSION.zip
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ steps.prep_version.outputs.version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
